@@ -1,0 +1,57 @@
+:root {
+
+}
+
+@font-face {
+  font-family: HortaRegular;
+  src: url("../res/fonts/Horta\ demo.otf");
+}
+
+body {
+    background-color: #00021f;
+    height: 100vh;
+}
+
+#page-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#page-container:after {
+  z-index: -1;
+  content:"";
+  background-image: url(../res/imgs/dyson-sphere-blue.webp);
+  background-size: cover;
+  filter: blur(5px);
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position-x: -200px;
+}
+
+#login-section {
+  grid-column: 2 / -1;
+  height: 100%;
+}
+
+#title {
+  color: #fff;
+  margin-top: calc(25vh);
+  background-color: #0000005f;
+  display: inline;
+  height: fit-content;
+}
+
+h1 {
+  font-family: 'HortaRegular';
+  font-size: 4rem;
+  text-align: center;
+
+  
+}
